@@ -1,0 +1,346 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+#root{
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+/* button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+} */
+
+nav{
+    position: -webkit-sticky;
+    
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100vw;
+    height: 30px;
+}
+
+.disney{
+  width: 20%;
+}
+.disney img{
+  height: 40%;
+  width: 20%;
+  margin-left: 10rem;
+}
+nav ul{
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: stretch;
+  width: 60%;
+}
+
+ul li{
+  margin-right: 1rem;
+}
+
+form{
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10rem;
+}
+form img{
+  /* width: 50px; */
+  height: 21px;
+
+}
+form button{
+  background-color: white;
+}
+input{
+  height: 25px;
+  /* margin-bottom: 8px; */
+}
+
+section{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* min-height: 90vh; */
+  width: 100vw;
+  /* background-color: #646cff; */
+  
+}
+
+.afterHero1, .afterHero2, .afterHero3, .afterHero4, .afterHero5, .afterHero7, .afterHero8{
+  width: 90%;
+  min-height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3rem;
+}
+.afterHero1, .afterHero2, .afterHero4{
+  background-color: #ddd7d771;
+}
+
+.afterHero11 div{
+  width: 50%;
+}
+.afterHero5 .cards{
+  width: 19%;
+  height: fit-content;
+}
+
+.afterHero7 .cards{
+  width: 18%;
+  height: fit-content;
+}
+
+.afterHero8 .cards{
+  width: 15%;
+  height: fit-content;
+}
+
+.afterHero9 .imageDiv{
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.afterHero9 .cards{
+  width: max-content;
+  height: max-content;
+}
+.afterHero9 img{
+  width: 24px;
+  height: 24px;
+}
+
+.afterHero8 .imageDiv{
+  flex-wrap: wrap;
+}
+
+.linkDiv{
+
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  width: 50%;
+  text-align: left;
+  margin-top: 1rem;
+}
+.linkDiv a{
+  width: 25%;
+  font-size: 12px;
+  margin-top: 1rem;
+
+}
+.afterHero12 .linkDiv{
+  flex-wrap: wrap;
+}
+.afterHero6{
+  height: 15vh;
+  padding: 0;
+}
+.afterHero6 .cards{
+  width: 10%;
+  height: 15vh;
+  padding-bottom: 0;
+  
+}
+
+.afterHero6 .imageDiv{
+  justify-content: center;
+}
+.link{
+  width: 88%;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 2rem;
+}
+.afterHero3{
+  background-color: #130e31;
+  color: #ffffff;
+}
+
+.afterHero3 .cards{
+  background-color: black;
+  color: white;
+}
+.hero{
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #9d969686;
+}
+
+.hero .text{
+  width: 35%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero .text p, h2{
+  margin-left: 3rem;
+}
+.hero .image{
+  width: 65%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.hero .image img{
+  width: 90%;
+  height: 90%;
+}
+
+.imageDiv{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-evenly;
+  width: 90%;
+  text-align: left;
+  margin-top: 1rem;
+}
+
+.secondDiv{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  /* background-color: #646cff; */
+  /* text-align: left; */
+}
+
+.batch2 #batch2{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+
+.cards{
+  width: 24%;
+  max-height: 58vh;
+  background-color: #ffffff;
+  /* border: 2px solid white; */
+
+}
+
+.textBox{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  margin: 2rem;
+
+}
+
+.afterHero2 .textBox .info1{
+  height: 90%;
+}
+
+.afterHero2 .textBox .info2 p{
+  font-size: 0.6rem;
+  font-weight: 500;
+}
+
+.afterHero2 .textBox{
+  height: 50%;
+  margin: 2rem;
+  /* background-color: #535bf2; */
+}
+
+
+.imageDiv img{
+  width: 100%;
+  
+}
+
+@media (
+  
+prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  /* button {
+    background-color: #f9f9f9;
+  } */
+}
